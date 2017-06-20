@@ -1,0 +1,183 @@
+h3 {
+  font: bold 38px "Montserrat", sans-serif;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.9);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h5 {
+  font: bold 20px "Merriweather", sans-serif;
+  color: rgba(0, 0, 0, 0.75);
+  text-transform: uppercase;
+}
+
+h6 {
+  font: 18px "Merriweather", sans-serif;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.62);
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.headerBlock {
+  background: #eff0f2;
+  padding: 60px 0 185px 0;
+}
+.headerBlock .headerContent {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+}
+.headerBlock .headerContent .headerTop {
+  margin-bottom: 150px;
+}
+.headerBlock .headerContent .headerTop:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.headerBlock .headerContent .headerTop:before {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.headerBlock .headerContent .headerLogo {
+  float: left;
+  width: 113px;
+}
+.headerBlock .headerContent .headerLogo h1 {
+  font: bold 16px "Montserrat", sans-serif;
+  margin-top: 0;
+  padding: 6px 0;
+  text-transform: uppercase;
+  border: 5px solid #170f1c;
+  text-align: center;
+}
+.headerBlock .headerContent .headerLogo h1 span {
+  font-size: 22px;
+  color: #77efe5;
+}
+.headerBlock .headerContent .headerNav {
+  cursor: pointer;
+  width: 30px;
+  height: 21px;
+  float: right;
+  background: url("../img/navBtn.png") right center no-repeat;
+}
+.headerBlock .headerContent h2 {
+  color: #505050;
+  font: bold 45px "Montserrat", sans-serif;
+  text-align: center;
+  margin-bottom: 120px;
+  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.headerBlock .headerContent h2 span {
+  background: #77efe5;
+}
+.headerBlock .headerContent a {
+  display: inline-block;
+  font: 18px "Montserrat", sans-serif;
+  color: rgba(0, 0, 0, 0.75);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 18px 45px;
+  border: 2px solid #777879;
+  position: absolute;
+  left: 50%;
+  margin-left: -104px;
+}
+.headerBlock .headerContent img {
+  position: absolute;
+  left: 75%;
+  top: 120%;
+}
+
+.about {
+  background: #f8fafa;
+  padding: 100px 0 100px 0;
+}
+.about .aboutContent {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.about .aboutContent .aboutBlock:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.about .aboutContent .aboutBlock:before {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.about .aboutContent .aboutBlock .aboutSlider {
+  width: 45%;
+  float: left;
+  position: relative;
+}
+.about .aboutContent .aboutBlock .aboutSlider .aboutSliderWrapper {
+  width: 475px;
+  height: 493px;
+  background: url("../img/sliderWrapper.png") center center no-repeat;
+}
+.about .aboutContent .aboutBlock .aboutSlider .aboutSliderWrapper .aboutSliderItems {
+  position: relative;
+}
+.about .aboutContent .aboutBlock .aboutSlider .aboutSliderWrapper .aboutSliderItems .sliderItems {
+  position: absolute;
+  left: 9%;
+  opacity: 0;
+}
+.about .aboutContent .aboutBlock .aboutSlider .aboutSliderWrapper .aboutSliderItems .showed {
+  opacity: 1;
+}
+.about .aboutContent .aboutBlock .aboutSlider .sliderBtns {
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+}
+.about .aboutContent .aboutBlock .aboutSlider .sliderBtns span {
+  display: inline-block;
+  padding: 6px 6px;
+  background: #d0d0d0;
+  cursor: pointer;
+}
+.about .aboutContent .aboutBlock .aboutSlider .sliderBtns .active {
+  background: #71f6eb;
+}
+.about .aboutContent .aboutBlock .aboutInf {
+  width: 45%;
+  float: right;
+}
+.about .aboutContent .aboutBlock .aboutInf p {
+  font: 16px "Raleway", sans-serif;
+  color: rgba(0, 0, 0, 0.74);
+  line-height: 1.5;
+}
+
+.works {
+  padding: 100px 0 100px 0;
+  background: #fff;
+}
+.works .worksContent {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.works .worksContent .worksGallery {
+  margin-left: 40px;
+}
+
+.services {
+  padding: 100px 0 100px 0;
+  background: #f9fbfb;
+}
+
+/*# sourceMappingURL=main.css.map */

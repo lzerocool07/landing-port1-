@@ -1,0 +1,43 @@
+
+//font-family
+$monserrat : 'Montserrat', sans-serif;
+$merriweather:'Merriweather', sans-serif;
+$raleway : 'Raleway' , sans-serif;
+
+//color
+$tittleColorh3: rgba(0,0,0,.9);
+$tittleColorh6: rgba(0,0,0,.62);
+$tittleColorh4: rgba(0,0,0,.75);
+$textColor: rgba(0,0,0,.74);
+$spanColor: #77efe5;
+
+//background
+$bgHeader:#eff0f2;
+$bgAbout:#f8fafa;
+$bgServices:#f9fbfb;
+
+
+
+@mixin clearfix {
+    
+    &:after {
+        content: "";
+        display: block;
+        height: 0;
+        clear: both;
+  
+    }
+    &:before{
+        content: "";
+        display: block;
+        height: 0;
+        clear:both;
+    }
+        
+}
+
+@mixin container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding:0 15px; 
+}    

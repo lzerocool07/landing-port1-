@@ -1,0 +1,174 @@
+h3{
+    font:bold 38px $monserrat;
+    text-align: center;
+    color: $tittleColorh3;
+    text-transform: uppercase;
+    margin: 0;
+}
+h5{
+    font:bold 20px $merriweather;
+    color:$tittleColorh4;
+    text-transform: uppercase;
+     
+}
+h6{
+    font:18px $merriweather;
+    text-align: center;
+    color:$tittleColorh6;
+    text-transform: uppercase;
+    margin-top:0;
+}
+
+//start header
+.headerBlock{
+    background:$bgHeader;
+    padding:60px 0 185px 0; 
+    .headerContent{
+        @include container;
+        position: relative;
+        
+        .headerTop{
+            @include clearfix;
+            margin-bottom:150px; 
+        }
+        
+        .headerLogo{
+            float:left;
+            width: 113px;
+            
+            h1{    
+                font:bold 16px $monserrat;
+                margin-top:0;  
+                padding:6px 0; 
+                text-transform: uppercase;
+                border:5px solid #170f1c;
+                text-align: center;
+                span{
+                    font-size: 22px;
+                    color:$spanColor;
+                    }
+            }
+        }
+        
+        .headerNav{
+            cursor: pointer;
+            width: 30px;
+            height: 21px;
+            float: right;
+            background:url('../img/navBtn.png')right center no-repeat
+        }
+        h2{
+            color:#505050;
+            font:bold 45px $monserrat;
+            text-align: center;
+            margin-bottom: 120px;
+            text-shadow: 2px 4px 8px rgba(0,0,0,.3);
+            span{
+                background:$spanColor;
+            }
+            
+        }
+        a{    
+            display: inline-block;
+            font:18px $monserrat;
+            color: $tittleColorh4;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding:18px 45px;
+            border:2px solid #777879;
+            position: absolute;
+            left: 50%;
+            margin-left: -104px;
+            
+        }
+        img{
+            position: absolute;
+            left: 75%;
+            top:120%;
+        }
+    }
+
+}
+//  end header
+
+// start about
+.about{
+    background: $bgAbout;
+    padding:100px 0 100px 0 ; 
+    .aboutContent{
+        @include container;
+        
+        .aboutBlock{
+            @include clearfix;
+            .aboutSlider{
+                width:45%; 
+                float:left;
+                position: relative;
+                .aboutSliderWrapper{
+                    width: 475px;
+                    height:493px;
+                    background: url('../img/sliderWrapper.png')center center no-repeat;
+                    .aboutSliderItems{
+                        position: relative;
+                        .sliderItems{
+                            position: absolute;
+                            left:9%;
+                            opacity: 0;
+                        }
+                        .showed{
+                            opacity:1;
+                        }
+                    }
+                }
+                .sliderBtns{
+                    position: absolute;
+                    left:50%;
+                    margin-left:-30px;
+                    span{
+                        display: inline-block;
+                        padding:6px 6px;
+                        background: #d0d0d0;
+                        cursor: pointer;
+                       
+                    }
+                    .active{
+                        background:#71f6eb
+                    }
+                }
+            }
+            
+            .aboutInf{
+                width: 45%;
+                float:right;
+                p{
+                    font:16px $raleway;
+                    color:$textColor;
+                    line-height:1.5; 
+                }
+            }
+        }
+    }
+}
+// end about
+
+
+
+//works
+.works{
+    padding:100px 0 100px 0;
+    background: #fff;
+    .worksContent{
+        @include container;
+        .worksGallery{
+            margin-left:40px 
+        }
+    }
+}
+// end works
+
+//services
+.services{
+    padding: 100px 0 100px 0;
+    background:$bgServices;
+}
+// end services
