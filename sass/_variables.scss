@@ -15,7 +15,7 @@ $spanColor: #77efe5;
 $bgHeader:#eff0f2;
 $bgAbout:#f8fafa;
 $bgServices:#f9fbfb;
-
+$bgReview:#f9fbfb;
 
 
 @mixin clearfix {
@@ -41,3 +41,27 @@ $bgServices:#f9fbfb;
     margin: 0 auto;
     padding:0 15px; 
 }    
+
+@mixin readMore{
+    font:18px $raleway;
+    color:rgba(255,255,255,.9);
+    text-decoration:none; 
+    text-transform: uppercase;
+    display: block;
+    &:after{
+        content: '';
+        margin-left: 10px;
+        display: inline-block;
+        width: 22px;
+        height: 14px;
+        background: url('../img/arrowR.png')right center no-repeat;
+        
+    }
+}
+
+@mixin paragr{
+    font:16px $raleway;
+    color:rgba(255,255,255,.9);
+    line-height: 1.5;
+}
+

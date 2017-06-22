@@ -18,7 +18,12 @@ h6{
     text-transform: uppercase;
     margin-top:0;
 }
-
+h4{   
+    font:bold 20px $merriweather;
+    color:rgba(255 ,255 ,255 ,.95);
+    margin-top: 89px;
+    text-transform: uppercase;
+}
 //start header
 .headerBlock{
     background:$bgHeader;
@@ -160,7 +165,10 @@ h6{
     .worksContent{
         @include container;
         .worksGallery{
-            margin-left:40px 
+            a{    
+                display: inline-block;
+                margin:8px;
+            }
         }
     }
 }
@@ -170,5 +178,192 @@ h6{
 .services{
     padding: 100px 0 100px 0;
     background:$bgServices;
+    
+    .servicesContent{
+        @include container;
+        
+        .servicesBlock{
+            @include clearfix;
+            margin-top:100px;
+            .style{
+                padding:50px 50px 100px 50px;
+                float: left;
+                margin-left:1%;
+                margin-bottom: 1%;
+                
+                background-size: cover;
+                box-sizing: border-box;
+                @include paragr;
+                a{
+                    @include readMore;
+                }
+            }
+            .item1{
+                width:50%;
+                background: #70f5eb;
+                p:first-child{
+                    font:bold 20px $merriweather;
+                    color: rgba(0,0,0,.83);
+                    text-transform: uppercase;
+                }
+                p:last-child{
+                    font:16px $raleway;
+                    color:$tittleColorh4;
+                    line-height: 1.5;
+                }
+            }
+            .item2{
+               
+                width:40%;
+                background: url('../img/bgItem1.jpg')50% 50% no-repeat;
+                background-size: cover;
+            }
+            .item3{
+                width:50%;
+                background: url('../img/bgItem2.jpg')50% 50% no-repeat;
+            }
+            .item4{
+                width:40%;
+                 background: url('../img/bgItem3.jpg')50% 50% no-repeat;
+            }
+            .item5{
+                width: 40%;
+                background: url('../img/bgItem3.jpg')50% 50% no-repeat;
+            }
+            .item6{
+                width: 50%;
+                background: url('../img/bgItem5.jpg')50% 50% no-repeat;
+            }
+        }
+    }
 }
 // end services
+
+
+//team
+.team{
+    padding: 100px 0 ;
+    .teamContent{
+        @include container;
+        .teamBlock img{
+            display: inline-block;
+            margin: 8px;
+        }
+    }
+}
+// end team
+
+
+//review
+
+.review{
+    background: $bgReview;
+    padding:100px 0 ; 
+    .reviewContent{
+        @include container;
+        .reviewBlock{
+            @include clearfix;
+        
+            .reviewSlider{
+                width:45%; 
+                float:left;
+                position: relative;
+                .reviewSliderWrapper{
+                    width: 475px;
+                    height:493px;
+                    background: url('../img/sliderWrapper.png')center center no-repeat;
+                    .reviewSliderItems{
+                        position: relative;
+                        .sliderItems{
+                            position: absolute;
+                            left:9%;
+                            opacity: 0;
+                        }
+                        .showed{
+                            opacity:1;
+                        }
+                    }
+                }
+                .sliderBtns{
+                    position: absolute;
+                    left:50%;
+                    margin-left:-30px;
+                    span{
+                        display: inline-block;
+                        padding:6px 6px;
+                        background: #d0d0d0;
+                        cursor: pointer;
+                       
+                    }
+                    .active{
+                        background:#71f6eb
+                    }
+                }
+            }
+            .reviewInf{
+                box-sizing: border-box;
+                width: 45%;
+                float: right;
+                background: #eaebed;
+                padding: 90px 65px 60px 65px;
+                position: relative;
+                p:first-child{
+                    font:bold 20px $merriweather;
+                    color:rgba(0,0,0,.95);
+                    text-transform: uppercase;
+                    text-align: center;
+                    margin-top: 0;
+                    span{
+                        font:normal 15px $merriweather;
+                        color:#787878;
+                        
+                    }
+                }
+                p:nth-child(2){
+                    font:16px $raleway;
+                    color:rgba(0,0,0,.7);
+                    text-align: center;
+                    line-height: 1.5;
+                }
+                .reviewStars{
+                    width:105px;
+                    height: 14px;
+                    background: url('../img/stars.jpg') 50% 50% no-repeat;
+                    margin:0 auto;
+                }
+               
+            }
+            .reviewBtns{
+                position: absolute;
+                bottom:-20%;
+                right: 0;
+                button{
+                    border:none;
+                    cursor: pointer;
+                    margin-left: 40px;
+                    width:53px;
+                    height: 54px;
+                    background: #fff;
+                    box-shadow:2px 2px 4px rgba(0,0,0,.5); 
+                    &:first-child{
+                        background:url('../img/reviewBtnl.png')50% 50% no-repeat;
+                    }
+                    &:first-child:hover{
+                        background: rgb(113,246,235)
+                            url('../img/reviewBtnl.png')50% 50% no-repeat;
+                    }
+                    &:last-child{
+                        
+                        background:url('../img/reviewBtnr.png')50% 50% no-repeat;
+                    }
+                    &:last-child:hover{
+                        background: rgb(113,246,235)
+                            url('../img/reviewBtnr.png')50% 50% no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// end review

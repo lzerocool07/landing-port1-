@@ -20,6 +20,13 @@ h6 {
   margin-top: 0;
 }
 
+h4 {
+  font: bold 20px "Merriweather", sans-serif;
+  color: rgba(255, 255, 255, 0.95);
+  margin-top: 89px;
+  text-transform: uppercase;
+}
+
 .headerBlock {
   background: #eff0f2;
   padding: 60px 0 185px 0;
@@ -171,13 +178,222 @@ h6 {
   margin: 0 auto;
   padding: 0 15px;
 }
-.works .worksContent .worksGallery {
-  margin-left: 40px;
+.works .worksContent .worksGallery a {
+  display: inline-block;
+  margin: 8px;
 }
 
 .services {
   padding: 100px 0 100px 0;
   background: #f9fbfb;
+}
+.services .servicesContent {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.services .servicesContent .servicesBlock {
+  margin-top: 100px;
+}
+.services .servicesContent .servicesBlock:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.services .servicesContent .servicesBlock:before {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.services .servicesContent .servicesBlock .style {
+  padding: 50px 50px 100px 50px;
+  float: left;
+  margin-left: 1%;
+  margin-bottom: 1%;
+  background-size: cover;
+  box-sizing: border-box;
+  font: 16px "Raleway", sans-serif;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.5;
+}
+.services .servicesContent .servicesBlock .style a {
+  font: 18px "Raleway", sans-serif;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+}
+.services .servicesContent .servicesBlock .style a:after {
+  content: '';
+  margin-left: 10px;
+  display: inline-block;
+  width: 22px;
+  height: 14px;
+  background: url("../img/arrowR.png") right center no-repeat;
+}
+.services .servicesContent .servicesBlock .item1 {
+  width: 50%;
+  background: #70f5eb;
+}
+.services .servicesContent .servicesBlock .item1 p:first-child {
+  font: bold 20px "Merriweather", sans-serif;
+  color: rgba(0, 0, 0, 0.83);
+  text-transform: uppercase;
+}
+.services .servicesContent .servicesBlock .item1 p:last-child {
+  font: 16px "Raleway", sans-serif;
+  color: rgba(0, 0, 0, 0.75);
+  line-height: 1.5;
+}
+.services .servicesContent .servicesBlock .item2 {
+  width: 40%;
+  background: url("../img/bgItem1.jpg") 50% 50% no-repeat;
+  background-size: cover;
+}
+.services .servicesContent .servicesBlock .item3 {
+  width: 50%;
+  background: url("../img/bgItem2.jpg") 50% 50% no-repeat;
+}
+.services .servicesContent .servicesBlock .item4 {
+  width: 40%;
+  background: url("../img/bgItem3.jpg") 50% 50% no-repeat;
+}
+.services .servicesContent .servicesBlock .item5 {
+  width: 40%;
+  background: url("../img/bgItem3.jpg") 50% 50% no-repeat;
+}
+.services .servicesContent .servicesBlock .item6 {
+  width: 50%;
+  background: url("../img/bgItem5.jpg") 50% 50% no-repeat;
+}
+
+.team {
+  padding: 100px 0;
+}
+.team .teamContent {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.team .teamContent .teamBlock img {
+  display: inline-block;
+  margin: 8px;
+}
+
+.review {
+  background: #f9fbfb;
+  padding: 100px 0;
+}
+.review .reviewContent {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.review .reviewContent .reviewBlock:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.review .reviewContent .reviewBlock:before {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.review .reviewContent .reviewBlock .reviewSlider {
+  width: 45%;
+  float: left;
+  position: relative;
+}
+.review .reviewContent .reviewBlock .reviewSlider .reviewSliderWrapper {
+  width: 475px;
+  height: 493px;
+  background: url("../img/sliderWrapper.png") center center no-repeat;
+}
+.review .reviewContent .reviewBlock .reviewSlider .reviewSliderWrapper .reviewSliderItems {
+  position: relative;
+}
+.review .reviewContent .reviewBlock .reviewSlider .reviewSliderWrapper .reviewSliderItems .sliderItems {
+  position: absolute;
+  left: 9%;
+  opacity: 0;
+}
+.review .reviewContent .reviewBlock .reviewSlider .reviewSliderWrapper .reviewSliderItems .showed {
+  opacity: 1;
+}
+.review .reviewContent .reviewBlock .reviewSlider .sliderBtns {
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+}
+.review .reviewContent .reviewBlock .reviewSlider .sliderBtns span {
+  display: inline-block;
+  padding: 6px 6px;
+  background: #d0d0d0;
+  cursor: pointer;
+}
+.review .reviewContent .reviewBlock .reviewSlider .sliderBtns .active {
+  background: #71f6eb;
+}
+.review .reviewContent .reviewBlock .reviewInf {
+  box-sizing: border-box;
+  width: 45%;
+  float: right;
+  background: #eaebed;
+  padding: 90px 65px 60px 65px;
+  position: relative;
+}
+.review .reviewContent .reviewBlock .reviewInf p:first-child {
+  font: bold 20px "Merriweather", sans-serif;
+  color: rgba(0, 0, 0, 0.95);
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
+}
+.review .reviewContent .reviewBlock .reviewInf p:first-child span {
+  font: normal 15px "Merriweather", sans-serif;
+  color: #787878;
+}
+.review .reviewContent .reviewBlock .reviewInf p:nth-child(2) {
+  font: 16px "Raleway", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  line-height: 1.5;
+}
+.review .reviewContent .reviewBlock .reviewInf .reviewStars {
+  width: 105px;
+  height: 14px;
+  background: url("../img/stars.jpg") 50% 50% no-repeat;
+  margin: 0 auto;
+}
+.review .reviewContent .reviewBlock .reviewBtns {
+  position: absolute;
+  bottom: -20%;
+  right: 0;
+}
+.review .reviewContent .reviewBlock .reviewBtns button {
+  border: none;
+  cursor: pointer;
+  margin-left: 40px;
+  width: 53px;
+  height: 54px;
+  background: #fff;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.review .reviewContent .reviewBlock .reviewBtns button:first-child {
+  background: url("../img/reviewBtnl.png") 50% 50% no-repeat;
+}
+.review .reviewContent .reviewBlock .reviewBtns button:first-child:hover {
+  background: #71f6eb url("../img/reviewBtnl.png") 50% 50% no-repeat;
+}
+.review .reviewContent .reviewBlock .reviewBtns button:last-child {
+  background: url("../img/reviewBtnr.png") 50% 50% no-repeat;
+}
+.review .reviewContent .reviewBlock .reviewBtns button:last-child:hover {
+  background: #71f6eb url("../img/reviewBtnr.png") 50% 50% no-repeat;
 }
 
 /*# sourceMappingURL=main.css.map */
