@@ -255,7 +255,6 @@ h4{
 
 
 //review
-
 .review{
     background: $bgReview;
     padding:100px 0 ; 
@@ -365,5 +364,242 @@ h4{
         }
     }
 }
-
 // end review
+
+
+
+//partners
+.partners{
+    padding: 100px 0 100px 0;
+    .partnersContent{
+        @include container;
+        @include clearfix;
+        .topPartnersIcon{
+            float:right;
+            position: relative;
+            left: -50%;
+            text-align: left;
+            ul{
+                list-style: none;
+                position: relative;
+                left:50%;
+            }
+            li{ 
+                float: left;
+                position: relative;
+                cursor: pointer;
+                width:150px;
+                height:60px;
+                background: url(../img/topIconSet.png)0 0  no-repeat; 
+            }
+            li:nth-child(2){
+                background-position: -162px 0;
+            }
+             li:nth-child(3){
+                background-position: -322px 0;
+            }
+          
+        }
+        
+        
+        .bottomPartnersIcon{
+            float:right;
+            position: relative;
+            left: -50%;
+            text-align: left;
+            ul{
+                list-style: none;
+                position: relative;
+                left:50%;
+            }
+            li{ 
+                float: left;
+                position: relative;
+                cursor: pointer;
+                width:150px;
+                height:60px;
+                background: url(../img/bottomIconSet.png)0 0  no-repeat; 
+            }
+            li:nth-child(2){
+                background-position: -162px 0;
+            }
+            li:nth-child(3){
+                background-position: -317px 0;
+            }
+            li:nth-child(4){
+                background-position: -465px 0;
+            }
+            li:nth-child(5){
+                background-position: -635px 0;
+            }
+            li:nth-child(6){
+                background-position: -832px 0;
+            }
+          
+        }
+    }
+}
+//end partners
+
+
+//callback
+.callback{
+    background:url('../img/bgCallBack.jpg')50% 50% repeat-x;
+    height: 733px;
+    
+    .callbackContent{
+        @include container;
+        @include clearfix;
+        padding-top:115px; 
+        .callbackContentForm{
+            width: 45%;
+            float:left;
+            background:$callBackColor;
+            padding: 20px 20px;
+            input , textarea{
+                display: block;
+                width: 100%;
+                border:none;
+                border-bottom: 1px solid rgba(109,121,129,.71);
+                background: transparent;
+                margin-bottom: 20px;
+                padding-bottom:10px;
+                &::placeholder{
+                    font: 15px $raleway;
+                    color:rgba(255,255,255,.6);
+                }
+            }
+            textarea{
+                resize: none;
+            }
+            button{
+                cursor: pointer;
+                display: block;
+                font:18px $monserrat;
+                color:rgba(0,0,0,.7);
+                text-transform: uppercase;
+                text-align: center;
+                padding: 10px 15px;
+                background: #6eeee4;
+                border:none;
+                &:hover{
+                    background: darken(#6eeee4, 25%);
+                }
+            }
+            
+        }
+        .contacts{
+            width: 45%;
+            float:right;
+            background: $callBackColor;
+            padding: 20px 20px;
+            p{
+                margin-top:0;
+                font:15px $raleway;
+                color:rgba(0,0,0,.7);
+            }
+            .contactsMap{
+                background: url('../img/googleMap.jpg')50% 50% no-repeat;
+                height: 207px;
+            }
+        }
+    }
+}
+//end callback
+
+//footer
+footer{
+    background: $bgFooter;
+    .footerContent{
+        @include container;
+        @include clearfix;
+        text-align: center;
+        padding:50px 0;
+        p:first-child{
+            margin-top:0;
+            font:16px $raleway;
+            color: rgba(0,0,0,.8);
+            text-transform: uppercase;
+        }
+        .footerSetIcon{  
+            @include clearfix;
+            float:right;
+            position: relative;
+            left: -50%;
+            
+            ul{
+                list-style: none;
+                position: relative;
+                left:45%;
+                @include clearfix;
+                li{ 
+                    @include clearfix;
+                    float: left;
+                    cursor: pointer;
+                    width:45px;
+                    height:40px;
+                    background: #424648;
+                    margin-right:10px; 
+                    position: relative;
+                    &::after{
+                        content:'';
+                        display: block;
+                        width: 30px;
+                        height: 25px;
+                        position: absolute;
+                        background:url('../img/footerSetIcon.png')no-repeat;
+                        top:17%;
+                        left:12%;
+                    }  
+                }
+                li:nth-child(2){
+                    &:after{
+                        background-position:-30px 0 ; 
+                    }
+                }
+                li:nth-child(3){
+                    &:after{
+                        background-position:-58px 0 ; 
+                    }
+                }        
+                li:nth-child(4){
+                    &:after{
+                        background-position:-83px 0 ; 
+                    }
+                }
+            
+                li:hover{
+                    background: #6eeee4;
+                }
+                li:nth-child(1):hover{
+                    &:after{
+                        background-position: 0 -32px; 
+                    }    
+                }
+                li:nth-child(2):hover{
+                    &:after{
+                        background-position: -30px -32px; 
+                    }
+                }
+                li:nth-child(3):hover{
+                    &:after{
+                        background-position: -58px -32px; 
+                    }
+                }
+                li:nth-child(4):hover{
+                    &:after{
+                        background-position: -83px -32px; 
+                    }
+                }
+            }
+           
+        }
+        p:last-child{
+            @include clearfix;
+            font:16px $raleway;
+            color:rgba(0,0,0 ,.4);
+            margin-top:100px;
+            margin-bottom: 0;
+        }
+    }
+}

@@ -396,4 +396,294 @@ h4 {
   background: #71f6eb url("../img/reviewBtnr.png") 50% 50% no-repeat;
 }
 
+.partners {
+  padding: 100px 0 100px 0;
+}
+.partners .partnersContent {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.partners .partnersContent:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.partners .partnersContent:before {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.partners .partnersContent .topPartnersIcon {
+  float: right;
+  position: relative;
+  left: -50%;
+  text-align: left;
+}
+.partners .partnersContent .topPartnersIcon ul {
+  list-style: none;
+  position: relative;
+  left: 50%;
+}
+.partners .partnersContent .topPartnersIcon li {
+  float: left;
+  position: relative;
+  cursor: pointer;
+  width: 150px;
+  height: 60px;
+  background: url(../img/topIconSet.png) 0 0 no-repeat;
+}
+.partners .partnersContent .topPartnersIcon li:nth-child(2) {
+  background-position: -162px 0;
+}
+.partners .partnersContent .topPartnersIcon li:nth-child(3) {
+  background-position: -322px 0;
+}
+.partners .partnersContent .bottomPartnersIcon {
+  float: right;
+  position: relative;
+  left: -50%;
+  text-align: left;
+}
+.partners .partnersContent .bottomPartnersIcon ul {
+  list-style: none;
+  position: relative;
+  left: 50%;
+}
+.partners .partnersContent .bottomPartnersIcon li {
+  float: left;
+  position: relative;
+  cursor: pointer;
+  width: 150px;
+  height: 60px;
+  background: url(../img/bottomIconSet.png) 0 0 no-repeat;
+}
+.partners .partnersContent .bottomPartnersIcon li:nth-child(2) {
+  background-position: -162px 0;
+}
+.partners .partnersContent .bottomPartnersIcon li:nth-child(3) {
+  background-position: -317px 0;
+}
+.partners .partnersContent .bottomPartnersIcon li:nth-child(4) {
+  background-position: -465px 0;
+}
+.partners .partnersContent .bottomPartnersIcon li:nth-child(5) {
+  background-position: -635px 0;
+}
+.partners .partnersContent .bottomPartnersIcon li:nth-child(6) {
+  background-position: -832px 0;
+}
+
+.callback {
+  background: url("../img/bgCallBack.jpg") 50% 50% repeat-x;
+  height: 733px;
+}
+.callback .callbackContent {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  padding-top: 115px;
+}
+.callback .callbackContent:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.callback .callbackContent:before {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.callback .callbackContent .callbackContentForm {
+  width: 45%;
+  float: left;
+  background: rgba(74, 88, 98, 0.71);
+  padding: 20px 20px;
+}
+.callback .callbackContent .callbackContentForm input, .callback .callbackContent .callbackContentForm textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(109, 121, 129, 0.71);
+  background: transparent;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+.callback .callbackContent .callbackContentForm input::placeholder, .callback .callbackContent .callbackContentForm textarea::placeholder {
+  font: 15px "Raleway", sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+}
+.callback .callbackContent .callbackContentForm textarea {
+  resize: none;
+}
+.callback .callbackContent .callbackContentForm button {
+  cursor: pointer;
+  display: block;
+  font: 18px "Montserrat", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 15px;
+  background: #6eeee4;
+  border: none;
+}
+.callback .callbackContent .callbackContentForm button:hover {
+  background: #17c5b8;
+}
+.callback .callbackContent .contacts {
+  width: 45%;
+  float: right;
+  background: rgba(74, 88, 98, 0.71);
+  padding: 20px 20px;
+}
+.callback .callbackContent .contacts p {
+  margin-top: 0;
+  font: 15px "Raleway", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+}
+.callback .callbackContent .contacts .contactsMap {
+  background: url("../img/googleMap.jpg") 50% 50% no-repeat;
+  height: 207px;
+}
+
+footer {
+  background: #262b2e;
+}
+footer .footerContent {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: center;
+  padding: 50px 0;
+}
+footer .footerContent:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+footer .footerContent:before {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+footer .footerContent p:first-child {
+  margin-top: 0;
+  font: 16px "Raleway", sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+}
+footer .footerContent .footerSetIcon {
+  float: right;
+  position: relative;
+  left: -50%;
+}
+footer .footerContent .footerSetIcon:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+footer .footerContent .footerSetIcon:before {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+footer .footerContent .footerSetIcon ul {
+  list-style: none;
+  position: relative;
+  left: 45%;
+}
+footer .footerContent .footerSetIcon ul:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+footer .footerContent .footerSetIcon ul:before {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+footer .footerContent .footerSetIcon ul li {
+  float: left;
+  cursor: pointer;
+  width: 45px;
+  height: 40px;
+  background: #424648;
+  margin-right: 10px;
+  position: relative;
+}
+footer .footerContent .footerSetIcon ul li:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+footer .footerContent .footerSetIcon ul li:before {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+footer .footerContent .footerSetIcon ul li::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 25px;
+  position: absolute;
+  background: url("../img/footerSetIcon.png") no-repeat;
+  top: 17%;
+  left: 12%;
+}
+footer .footerContent .footerSetIcon ul li:nth-child(2):after {
+  background-position: -30px 0;
+}
+footer .footerContent .footerSetIcon ul li:nth-child(3):after {
+  background-position: -58px 0;
+}
+footer .footerContent .footerSetIcon ul li:nth-child(4):after {
+  background-position: -83px 0;
+}
+footer .footerContent .footerSetIcon ul li:hover {
+  background: #6eeee4;
+}
+footer .footerContent .footerSetIcon ul li:nth-child(1):hover:after {
+  background-position: 0 -32px;
+}
+footer .footerContent .footerSetIcon ul li:nth-child(2):hover:after {
+  background-position: -30px -32px;
+}
+footer .footerContent .footerSetIcon ul li:nth-child(3):hover:after {
+  background-position: -58px -32px;
+}
+footer .footerContent .footerSetIcon ul li:nth-child(4):hover:after {
+  background-position: -83px -32px;
+}
+footer .footerContent p:last-child {
+  font: 16px "Raleway", sans-serif;
+  color: rgba(0, 0, 0, 0.4);
+  margin-top: 100px;
+  margin-bottom: 0;
+}
+footer .footerContent p:last-child:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+footer .footerContent p:last-child:before {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
 /*# sourceMappingURL=main.css.map */
