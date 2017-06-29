@@ -1,689 +1,223 @@
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px 0 15px;
+}
+
 h3 {
   font: bold 38px "Montserrat", sans-serif;
-  text-align: center;
   color: rgba(0, 0, 0, 0.9);
   text-transform: uppercase;
-  margin: 0;
+  text-align: center;
+  padding-top: 115px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h4 {
+  font: bold 17px "Merriweather", sans-serif;
+  color: rgba(0, 0, 0, 0.75);
+  text-transform: uppercase;
 }
 
 h5 {
   font: bold 20px "Merriweather", sans-serif;
-  color: rgba(0, 0, 0, 0.75);
-  text-transform: uppercase;
-}
-
-h6 {
-  font: 18px "Merriweather", sans-serif;
-  text-align: center;
-  color: rgba(0, 0, 0, 0.62);
-  text-transform: uppercase;
-  margin-top: 0;
-}
-
-h4 {
-  font: bold 20px "Merriweather", sans-serif;
   color: rgba(255, 255, 255, 0.95);
-  margin-top: 89px;
   text-transform: uppercase;
 }
 
-.headerBlock {
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.header {
   background: #eff0f2;
-  padding: 60px 0 185px 0;
 }
-.headerBlock .headerContent {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 15px;
-  position: relative;
+
+.headerTop {
+  padding-top: 50px;
 }
-.headerBlock .headerContent .headerTop {
-  margin-bottom: 150px;
-}
-.headerBlock .headerContent .headerTop:after {
-  content: "";
+
+.headerTop::before {
+  content: " ";
   display: block;
   height: 0;
   clear: both;
 }
-.headerBlock .headerContent .headerTop:before {
-  content: "";
+
+.headerTop::after {
+  content: " ";
   display: block;
   height: 0;
   clear: both;
 }
-.headerBlock .headerContent .headerLogo {
+
+.headerTop .logo {
   float: left;
-  width: 113px;
-}
-.headerBlock .headerContent .headerLogo h1 {
-  font: bold 16px "Montserrat", sans-serif;
-  margin-top: 0;
-  padding: 6px 0;
-  text-transform: uppercase;
   border: 5px solid #170f1c;
-  text-align: center;
+  padding: 0 5px;
 }
-.headerBlock .headerContent .headerLogo h1 span {
-  font-size: 22px;
+
+.headerTop .logo h1 {
+  font: bold 17px "Montserrat", sans-serif;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.headerTop .logo h1 span {
+  font-size: 21px;
   color: #77efe5;
 }
-.headerBlock .headerContent .headerNav {
-  cursor: pointer;
-  width: 30px;
-  height: 21px;
+
+.headerTop .nav {
   float: right;
-  background: url("../img/navBtn.png") right center no-repeat;
 }
-.headerBlock .headerContent h2 {
+
+.headerTop .nav li {
+  float: left;
+  margin-left: 15px;
+}
+
+.headerTop .nav li a {
+  display: block;
+  font: bold 15px "Merriweather", sans-serif;
+  cursor: pointer;
+  text-transform: uppercase;
   color: #505050;
-  font: bold 45px "Montserrat", sans-serif;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.headerTop .nav li a:hover {
+  color: black;
+  text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.headerBottom {
+  padding-top: 200px;
   text-align: center;
-  margin-bottom: 120px;
-  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
 }
-.headerBlock .headerContent h2 span {
-  background: #77efe5;
+
+.headerBottom h2 {
+  font: bold 45px "Montserrat", sans-serif;
+  color: #505050;
+  text-shadow: 4px 6px 6px #c9c9cb;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
 }
-.headerBlock .headerContent a {
-  display: inline-block;
+
+.headerBottom h2 span {
+  background: #b2f2ee;
+}
+
+.headerBottom a {
   font: 18px "Montserrat", sans-serif;
   color: rgba(0, 0, 0, 0.75);
-  text-decoration: none;
   text-transform: uppercase;
-  padding: 18px 45px;
+  display: inline-block;
+  margin-top: 125px;
+  margin-bottom: 190px;
+  padding: 15px 40px;
   border: 2px solid #777879;
-  position: absolute;
-  left: 50%;
-  margin-left: -104px;
 }
-.headerBlock .headerContent img {
+
+.headerBottom a:hover {
+  background: #fff;
+}
+
+.headerBottom img {
+  display: block;
   position: absolute;
-  left: 75%;
-  top: 120%;
+  left: 80%;
+  top: 70%;
 }
 
 .about {
   background: #f8fafa;
-  padding: 100px 0 100px 0;
 }
+
+.about .aboutTitle p {
+  font: 18px "Merriweather", sans-serif;
+  color: rgba(0, 0, 0, 0.62);
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
+}
+
 .about .aboutContent {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 15px;
+  margin-top: 120px;
+  padding-bottom: 90px;
 }
-.about .aboutContent .aboutBlock:after {
-  content: "";
+
+.about .aboutContent::before {
+  content: " ";
   display: block;
   height: 0;
   clear: both;
 }
-.about .aboutContent .aboutBlock:before {
-  content: "";
+
+.about .aboutContent::after {
+  content: " ";
   display: block;
   height: 0;
   clear: both;
 }
-.about .aboutContent .aboutBlock .aboutSlider {
-  width: 45%;
+
+.about .aboutContent .aboutSlider {
   float: left;
-  position: relative;
+  width: 40%;
 }
-.about .aboutContent .aboutBlock .aboutSlider .aboutSliderWrapper {
-  width: 475px;
-  height: 493px;
-  background: url("../img/sliderWrapper.png") center center no-repeat;
-}
-.about .aboutContent .aboutBlock .aboutSlider .aboutSliderWrapper .aboutSliderItems {
-  position: relative;
-}
-.about .aboutContent .aboutBlock .aboutSlider .aboutSliderWrapper .aboutSliderItems .sliderItems {
-  position: absolute;
-  left: 9%;
-  opacity: 0;
-}
-.about .aboutContent .aboutBlock .aboutSlider .aboutSliderWrapper .aboutSliderItems .showed {
-  opacity: 1;
-}
-.about .aboutContent .aboutBlock .aboutSlider .sliderBtns {
-  position: absolute;
-  left: 50%;
-  margin-left: -30px;
-}
-.about .aboutContent .aboutBlock .aboutSlider .sliderBtns span {
-  display: inline-block;
-  padding: 6px 6px;
-  background: #d0d0d0;
-  cursor: pointer;
-}
-.about .aboutContent .aboutBlock .aboutSlider .sliderBtns .active {
-  background: #71f6eb;
-}
-.about .aboutContent .aboutBlock .aboutInf {
-  width: 45%;
+
+.about .aboutContent .aboutContentRight {
   float: right;
+  width: 50%;
 }
-.about .aboutContent .aboutBlock .aboutInf p {
-  font: 16px "Raleway", sans-serif;
+
+.about .aboutContent .aboutContentRight p {
+  font: 16px "Raleway";
   color: rgba(0, 0, 0, 0.74);
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
-.works {
-  padding: 100px 0 100px 0;
-  background: #fff;
-}
-.works .worksContent {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-.works .worksContent .worksGallery a {
-  display: inline-block;
-  margin: 8px;
+.about .aboutSlider {
+  text-align: center;
 }
 
-.services {
-  padding: 100px 0 100px 0;
-  background: #f9fbfb;
-}
-.services .servicesContent {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-.services .servicesContent .servicesBlock {
-  margin-top: 100px;
-}
-.services .servicesContent .servicesBlock:after {
-  content: "";
-  display: block;
-  height: 0;
-  clear: both;
-}
-.services .servicesContent .servicesBlock:before {
-  content: "";
-  display: block;
-  height: 0;
-  clear: both;
-}
-.services .servicesContent .servicesBlock .style {
-  padding: 50px 50px 100px 50px;
-  float: left;
-  margin-left: 1%;
-  margin-bottom: 1%;
-  background-size: cover;
-  box-sizing: border-box;
-  font: 16px "Raleway", sans-serif;
-  color: rgba(255, 255, 255, 0.9);
-  line-height: 1.5;
-}
-.services .servicesContent .servicesBlock .style a {
-  font: 18px "Raleway", sans-serif;
-  color: rgba(255, 255, 255, 0.9);
-  text-decoration: none;
-  text-transform: uppercase;
-  display: block;
-}
-.services .servicesContent .servicesBlock .style a:after {
-  content: '';
-  margin-left: 10px;
-  display: inline-block;
-  width: 22px;
-  height: 14px;
-  background: url("../img/arrowR.png") right center no-repeat;
-}
-.services .servicesContent .servicesBlock .item1 {
-  width: 50%;
-  background: #70f5eb;
-}
-.services .servicesContent .servicesBlock .item1 p:first-child {
-  font: bold 20px "Merriweather", sans-serif;
-  color: rgba(0, 0, 0, 0.83);
-  text-transform: uppercase;
-}
-.services .servicesContent .servicesBlock .item1 p:last-child {
-  font: 16px "Raleway", sans-serif;
-  color: rgba(0, 0, 0, 0.75);
-  line-height: 1.5;
-}
-.services .servicesContent .servicesBlock .item2 {
-  width: 40%;
-  background: url("../img/bgItem1.jpg") 50% 50% no-repeat;
-  background-size: cover;
-}
-.services .servicesContent .servicesBlock .item3 {
-  width: 50%;
-  background: url("../img/bgItem2.jpg") 50% 50% no-repeat;
-}
-.services .servicesContent .servicesBlock .item4 {
-  width: 40%;
-  background: url("../img/bgItem3.jpg") 50% 50% no-repeat;
-}
-.services .servicesContent .servicesBlock .item5 {
-  width: 40%;
-  background: url("../img/bgItem3.jpg") 50% 50% no-repeat;
-}
-.services .servicesContent .servicesBlock .item6 {
-  width: 50%;
-  background: url("../img/bgItem5.jpg") 50% 50% no-repeat;
-}
-
-.team {
-  padding: 100px 0;
-}
-.team .teamContent {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-.team .teamContent .teamBlock img {
-  display: inline-block;
-  margin: 8px;
-}
-
-.review {
-  background: #f9fbfb;
-  padding: 100px 0;
-}
-.review .reviewContent {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-.review .reviewContent .reviewBlock:after {
-  content: "";
-  display: block;
-  height: 0;
-  clear: both;
-}
-.review .reviewContent .reviewBlock:before {
-  content: "";
-  display: block;
-  height: 0;
-  clear: both;
-}
-.review .reviewContent .reviewBlock .reviewSlider {
-  width: 45%;
-  float: left;
+.about .aboutSlider .aboutSliderWrapper {
+  background: url("../img/slidderWrapper.png") center center no-repeat;
+  height: 483px;
   position: relative;
+  margin-bottom: 20px;
 }
-.review .reviewContent .reviewBlock .reviewSlider .reviewSliderWrapper {
-  width: 475px;
-  height: 493px;
-  background: url("../img/sliderWrapper.png") center center no-repeat;
-}
-.review .reviewContent .reviewBlock .reviewSlider .reviewSliderWrapper .reviewSliderItems {
-  position: relative;
-}
-.review .reviewContent .reviewBlock .reviewSlider .reviewSliderWrapper .reviewSliderItems .sliderItems {
+
+.about .aboutSlider .aboutSliderWrapper img {
   position: absolute;
-  left: 9%;
+  left: 34px;
   opacity: 0;
+  transition: opacity .9s;
 }
-.review .reviewContent .reviewBlock .reviewSlider .reviewSliderWrapper .reviewSliderItems .showed {
+
+.about .aboutSlider .aboutSliderWrapper .show {
   opacity: 1;
 }
-.review .reviewContent .reviewBlock .reviewSlider .sliderBtns {
-  position: absolute;
-  left: 50%;
-  margin-left: -30px;
-}
-.review .reviewContent .reviewBlock .reviewSlider .sliderBtns span {
-  display: inline-block;
-  padding: 6px 6px;
-  background: #d0d0d0;
-  cursor: pointer;
-}
-.review .reviewContent .reviewBlock .reviewSlider .sliderBtns .active {
-  background: #71f6eb;
-}
-.review .reviewContent .reviewBlock .reviewInf {
-  box-sizing: border-box;
-  width: 45%;
-  float: right;
-  background: #eaebed;
-  padding: 90px 65px 60px 65px;
-  position: relative;
-}
-.review .reviewContent .reviewBlock .reviewInf p:first-child {
-  font: bold 20px "Merriweather", sans-serif;
-  color: rgba(0, 0, 0, 0.95);
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 0;
-}
-.review .reviewContent .reviewBlock .reviewInf p:first-child span {
-  font: normal 15px "Merriweather", sans-serif;
-  color: #787878;
-}
-.review .reviewContent .reviewBlock .reviewInf p:nth-child(2) {
-  font: 16px "Raleway", sans-serif;
-  color: rgba(0, 0, 0, 0.7);
-  text-align: center;
-  line-height: 1.5;
-}
-.review .reviewContent .reviewBlock .reviewInf .reviewStars {
-  width: 105px;
-  height: 14px;
-  background: url("../img/stars.jpg") 50% 50% no-repeat;
-  margin: 0 auto;
-}
-.review .reviewContent .reviewBlock .reviewBtns {
-  position: absolute;
-  bottom: -20%;
-  right: 0;
-}
-.review .reviewContent .reviewBlock .reviewBtns button {
-  border: none;
-  cursor: pointer;
-  margin-left: 40px;
-  width: 53px;
-  height: 54px;
+
+.about .aboutSlider span {
+  width: 20px;
+  height: 20px;
   background: #fff;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-.review .reviewContent .reviewBlock .reviewBtns button:first-child {
-  background: url("../img/reviewBtnl.png") 50% 50% no-repeat;
-}
-.review .reviewContent .reviewBlock .reviewBtns button:first-child:hover {
-  background: #71f6eb url("../img/reviewBtnl.png") 50% 50% no-repeat;
-}
-.review .reviewContent .reviewBlock .reviewBtns button:last-child {
-  background: url("../img/reviewBtnr.png") 50% 50% no-repeat;
-}
-.review .reviewContent .reviewBlock .reviewBtns button:last-child:hover {
-  background: #71f6eb url("../img/reviewBtnr.png") 50% 50% no-repeat;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
 }
 
-.partners {
-  padding: 100px 0 100px 0;
+.about .aboutSlider .active {
+  background: aqua;
 }
-.partners .partnersContent {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-.partners .partnersContent:after {
-  content: "";
-  display: block;
-  height: 0;
-  clear: both;
-}
-.partners .partnersContent:before {
-  content: "";
-  display: block;
-  height: 0;
-  clear: both;
-}
-.partners .partnersContent .topPartnersIcon {
-  float: right;
-  position: relative;
-  left: -50%;
-  text-align: left;
-}
-.partners .partnersContent .topPartnersIcon ul {
-  list-style: none;
-  position: relative;
-  left: 50%;
-}
-.partners .partnersContent .topPartnersIcon li {
-  float: left;
-  position: relative;
-  cursor: pointer;
-  width: 150px;
-  height: 60px;
-  background: url(../img/topIconSet.png) 0 0 no-repeat;
-}
-.partners .partnersContent .topPartnersIcon li:nth-child(2) {
-  background-position: -162px 0;
-}
-.partners .partnersContent .topPartnersIcon li:nth-child(3) {
-  background-position: -322px 0;
-}
-.partners .partnersContent .bottomPartnersIcon {
-  float: right;
-  position: relative;
-  left: -50%;
-  text-align: left;
-}
-.partners .partnersContent .bottomPartnersIcon ul {
-  list-style: none;
-  position: relative;
-  left: 50%;
-}
-.partners .partnersContent .bottomPartnersIcon li {
-  float: left;
-  position: relative;
-  cursor: pointer;
-  width: 150px;
-  height: 60px;
-  background: url(../img/bottomIconSet.png) 0 0 no-repeat;
-}
-.partners .partnersContent .bottomPartnersIcon li:nth-child(2) {
-  background-position: -162px 0;
-}
-.partners .partnersContent .bottomPartnersIcon li:nth-child(3) {
-  background-position: -317px 0;
-}
-.partners .partnersContent .bottomPartnersIcon li:nth-child(4) {
-  background-position: -465px 0;
-}
-.partners .partnersContent .bottomPartnersIcon li:nth-child(5) {
-  background-position: -635px 0;
-}
-.partners .partnersContent .bottomPartnersIcon li:nth-child(6) {
-  background-position: -832px 0;
-}
-
-.callback {
-  background: url("../img/bgCallBack.jpg") 50% 50% repeat-x;
-  height: 733px;
-}
-.callback .callbackContent {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 15px;
-  padding-top: 115px;
-}
-.callback .callbackContent:after {
-  content: "";
-  display: block;
-  height: 0;
-  clear: both;
-}
-.callback .callbackContent:before {
-  content: "";
-  display: block;
-  height: 0;
-  clear: both;
-}
-.callback .callbackContent .callbackContentForm {
-  width: 45%;
-  float: left;
-  background: rgba(74, 88, 98, 0.71);
-  padding: 20px 20px;
-}
-.callback .callbackContent .callbackContentForm input, .callback .callbackContent .callbackContentForm textarea {
-  display: block;
-  width: 100%;
-  border: none;
-  border-bottom: 1px solid rgba(109, 121, 129, 0.71);
-  background: transparent;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-}
-.callback .callbackContent .callbackContentForm input::placeholder, .callback .callbackContent .callbackContentForm textarea::placeholder {
-  font: 15px "Raleway", sans-serif;
-  color: rgba(255, 255, 255, 0.6);
-}
-.callback .callbackContent .callbackContentForm textarea {
-  resize: none;
-}
-.callback .callbackContent .callbackContentForm button {
-  cursor: pointer;
-  display: block;
-  font: 18px "Montserrat", sans-serif;
-  color: rgba(0, 0, 0, 0.7);
-  text-transform: uppercase;
-  text-align: center;
-  padding: 10px 15px;
-  background: #6eeee4;
-  border: none;
-}
-.callback .callbackContent .callbackContentForm button:hover {
-  background: #17c5b8;
-}
-.callback .callbackContent .contacts {
-  width: 45%;
-  float: right;
-  background: rgba(74, 88, 98, 0.71);
-  padding: 20px 20px;
-}
-.callback .callbackContent .contacts p {
-  margin-top: 0;
-  font: 15px "Raleway", sans-serif;
-  color: rgba(0, 0, 0, 0.7);
-}
-.callback .callbackContent .contacts .contactsMap {
-  background: url("../img/googleMap.jpg") 50% 50% no-repeat;
-  height: 207px;
-}
-
-footer {
-  background: #262b2e;
-}
-footer .footerContent {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 15px;
-  text-align: center;
-  padding: 50px 0;
-}
-footer .footerContent:after {
-  content: "";
-  display: block;
-  height: 0;
-  clear: both;
-}
-footer .footerContent:before {
-  content: "";
-  display: block;
-  height: 0;
-  clear: both;
-}
-footer .footerContent p:first-child {
-  margin-top: 0;
-  font: 16px "Raleway", sans-serif;
-  color: rgba(0, 0, 0, 0.8);
-  text-transform: uppercase;
-}
-footer .footerContent .footerSetIcon {
-  float: right;
-  position: relative;
-  left: -50%;
-}
-footer .footerContent .footerSetIcon:after {
-  content: "";
-  display: block;
-  height: 0;
-  clear: both;
-}
-footer .footerContent .footerSetIcon:before {
-  content: "";
-  display: block;
-  height: 0;
-  clear: both;
-}
-footer .footerContent .footerSetIcon ul {
-  list-style: none;
-  position: relative;
-  left: 45%;
-}
-footer .footerContent .footerSetIcon ul:after {
-  content: "";
-  display: block;
-  height: 0;
-  clear: both;
-}
-footer .footerContent .footerSetIcon ul:before {
-  content: "";
-  display: block;
-  height: 0;
-  clear: both;
-}
-footer .footerContent .footerSetIcon ul li {
-  float: left;
-  cursor: pointer;
-  width: 45px;
-  height: 40px;
-  background: #424648;
-  margin-right: 10px;
-  position: relative;
-}
-footer .footerContent .footerSetIcon ul li:after {
-  content: "";
-  display: block;
-  height: 0;
-  clear: both;
-}
-footer .footerContent .footerSetIcon ul li:before {
-  content: "";
-  display: block;
-  height: 0;
-  clear: both;
-}
-footer .footerContent .footerSetIcon ul li::after {
-  content: '';
-  display: block;
-  width: 30px;
-  height: 25px;
-  position: absolute;
-  background: url("../img/footerSetIcon.png") no-repeat;
-  top: 17%;
-  left: 12%;
-}
-footer .footerContent .footerSetIcon ul li:nth-child(2):after {
-  background-position: -30px 0;
-}
-footer .footerContent .footerSetIcon ul li:nth-child(3):after {
-  background-position: -58px 0;
-}
-footer .footerContent .footerSetIcon ul li:nth-child(4):after {
-  background-position: -83px 0;
-}
-footer .footerContent .footerSetIcon ul li:hover {
-  background: #6eeee4;
-}
-footer .footerContent .footerSetIcon ul li:nth-child(1):hover:after {
-  background-position: 0 -32px;
-}
-footer .footerContent .footerSetIcon ul li:nth-child(2):hover:after {
-  background-position: -30px -32px;
-}
-footer .footerContent .footerSetIcon ul li:nth-child(3):hover:after {
-  background-position: -58px -32px;
-}
-footer .footerContent .footerSetIcon ul li:nth-child(4):hover:after {
-  background-position: -83px -32px;
-}
-footer .footerContent p:last-child {
-  font: 16px "Raleway", sans-serif;
-  color: rgba(0, 0, 0, 0.4);
-  margin-top: 100px;
-  margin-bottom: 0;
-}
-footer .footerContent p:last-child:after {
-  content: "";
-  display: block;
-  height: 0;
-  clear: both;
-}
-footer .footerContent p:last-child:before {
-  content: "";
-  display: block;
-  height: 0;
-  clear: both;
-}
-
-/*# sourceMappingURL=main.css.map */

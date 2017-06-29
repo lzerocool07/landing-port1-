@@ -1,605 +1,177 @@
+.container{
+    @include container;
+}
+
 h3{
     font:bold 38px $monserrat;
-    text-align: center;
-    color: $tittleColorh3;
+    color:rgba(0,0,0,.9);
     text-transform: uppercase;
-    margin: 0;
+    text-align: center;
+    padding-top:115px;
+    margin-top: 0;
+    margin-bottom:0;    
+}
+h4{
+    font:bold 17px $merriweather;
+    color:rgba(0,0,0,.75);
+    text-transform: uppercase;
 }
 h5{
     font:bold 20px $merriweather;
-    color:$tittleColorh4;
-    text-transform: uppercase;
-     
-}
-h6{
-    font:18px $merriweather;
-    text-align: center;
-    color:$tittleColorh6;
-    text-transform: uppercase;
-    margin-top:0;
-}
-h4{   
-    font:bold 20px $merriweather;
-    color:rgba(255 ,255 ,255 ,.95);
-    margin-top: 89px;
+    color:rgba(255,255,255,.95);
     text-transform: uppercase;
 }
-//start header
-.headerBlock{
-    background:$bgHeader;
-    padding:60px 0 185px 0; 
-    .headerContent{
-        @include container;
-        position: relative;
-        
-        .headerTop{
-            @include clearfix;
-            margin-bottom:150px; 
-        }
-        
-        .headerLogo{
-            float:left;
-            width: 113px;
-            
-            h1{    
-                font:bold 16px $monserrat;
-                margin-top:0;  
-                padding:6px 0; 
-                text-transform: uppercase;
-                border:5px solid #170f1c;
-                text-align: center;
-                span{
-                    font-size: 22px;
-                    color:$spanColor;
-                    }
-            }
-        }
-        
-        .headerNav{
-            cursor: pointer;
-            width: 30px;
-            height: 21px;
-            float: right;
-            background:url('../img/navBtn.png')right center no-repeat
-        }
-        h2{
-            color:#505050;
-            font:bold 45px $monserrat;
-            text-align: center;
-            margin-bottom: 120px;
-            text-shadow: 2px 4px 8px rgba(0,0,0,.3);
+
+ul{
+    padding-left: 0;
+    list-style: none;
+}
+a, a:hover{
+    text-decoration: none;
+}
+
+
+//header
+
+.header{
+    background: #eff0f2;
+}
+
+.headerTop{
+    padding-top: 50px;
+    @include clearfix;
+    .logo{
+        float:left;
+        border:5px solid #170f1c;
+        padding:0 5px; 
+        h1{    
+            font:bold 17px $monserrat;
+            color:#000;
+            text-transform: uppercase;
             span{
-                background:$spanColor;
-            }
-            
-        }
-        a{    
-            display: inline-block;
-            font:18px $monserrat;
-            color: $tittleColorh4;
-            text-decoration: none;
-            text-transform: uppercase;
-            padding:18px 45px;
-            border:2px solid #777879;
-            position: absolute;
-            left: 50%;
-            margin-left: -104px;
-            
-        }
-        img{
-            position: absolute;
-            left: 75%;
-            top:120%;
-        }
-    }
-
-}
-//  end header
-
-// start about
-.about{
-    background: $bgAbout;
-    padding:100px 0 100px 0 ; 
-    .aboutContent{
-        @include container;
-        
-        .aboutBlock{
-            @include clearfix;
-            .aboutSlider{
-                width:45%; 
-                float:left;
-                position: relative;
-                .aboutSliderWrapper{
-                    width: 475px;
-                    height:493px;
-                    background: url('../img/sliderWrapper.png')center center no-repeat;
-                    .aboutSliderItems{
-                        position: relative;
-                        .sliderItems{
-                            position: absolute;
-                            left:9%;
-                            opacity: 0;
-                        }
-                        .showed{
-                            opacity:1;
-                        }
-                    }
-                }
-                .sliderBtns{
-                    position: absolute;
-                    left:50%;
-                    margin-left:-30px;
-                    span{
-                        display: inline-block;
-                        padding:6px 6px;
-                        background: #d0d0d0;
-                        cursor: pointer;
-                       
-                    }
-                    .active{
-                        background:#71f6eb
-                    }
-                }
-            }
-            
-            .aboutInf{
-                width: 45%;
-                float:right;
-                p{
-                    font:16px $raleway;
-                    color:$textColor;
-                    line-height:1.5; 
-                }
+                font-size:21px;
+                color:#77efe5
             }
         }
     }
-}
-// end about
-
-
-
-//works
-.works{
-    padding:100px 0 100px 0;
-    background: #fff;
-    .worksContent{
-        @include container;
-        .worksGallery{
-            a{    
-                display: inline-block;
-                margin:8px;
-            }
-        }
-    }
-}
-// end works
-
-//services
-.services{
-    padding: 100px 0 100px 0;
-    background:$bgServices;
-    
-    .servicesContent{
-        @include container;
-        
-        .servicesBlock{
-            @include clearfix;
-            margin-top:100px;
-            .style{
-                padding:50px 50px 100px 50px;
-                float: left;
-                margin-left:1%;
-                margin-bottom: 1%;
-                
-                background-size: cover;
-                box-sizing: border-box;
-                @include paragr;
-                a{
-                    @include readMore;
-                }
-            }
-            .item1{
-                width:50%;
-                background: #70f5eb;
-                p:first-child{
-                    font:bold 20px $merriweather;
-                    color: rgba(0,0,0,.83);
-                    text-transform: uppercase;
-                }
-                p:last-child{
-                    font:16px $raleway;
-                    color:$tittleColorh4;
-                    line-height: 1.5;
-                }
-            }
-            .item2{
-               
-                width:40%;
-                background: url('../img/bgItem1.jpg')50% 50% no-repeat;
-                background-size: cover;
-            }
-            .item3{
-                width:50%;
-                background: url('../img/bgItem2.jpg')50% 50% no-repeat;
-            }
-            .item4{
-                width:40%;
-                 background: url('../img/bgItem3.jpg')50% 50% no-repeat;
-            }
-            .item5{
-                width: 40%;
-                background: url('../img/bgItem3.jpg')50% 50% no-repeat;
-            }
-            .item6{
-                width: 50%;
-                background: url('../img/bgItem5.jpg')50% 50% no-repeat;
-            }
-        }
-    }
-}
-// end services
-
-
-//team
-.team{
-    padding: 100px 0 ;
-    .teamContent{
-        @include container;
-        .teamBlock img{
-            display: inline-block;
-            margin: 8px;
-        }
-    }
-}
-// end team
-
-
-//review
-.review{
-    background: $bgReview;
-    padding:100px 0 ; 
-    .reviewContent{
-        @include container;
-        .reviewBlock{
-            @include clearfix;
-        
-            .reviewSlider{
-                width:45%; 
-                float:left;
-                position: relative;
-                .reviewSliderWrapper{
-                    width: 475px;
-                    height:493px;
-                    background: url('../img/sliderWrapper.png')center center no-repeat;
-                    .reviewSliderItems{
-                        position: relative;
-                        .sliderItems{
-                            position: absolute;
-                            left:9%;
-                            opacity: 0;
-                        }
-                        .showed{
-                            opacity:1;
-                        }
-                    }
-                }
-                .sliderBtns{
-                    position: absolute;
-                    left:50%;
-                    margin-left:-30px;
-                    span{
-                        display: inline-block;
-                        padding:6px 6px;
-                        background: #d0d0d0;
-                        cursor: pointer;
-                       
-                    }
-                    .active{
-                        background:#71f6eb
-                    }
-                }
-            }
-            .reviewInf{
-                box-sizing: border-box;
-                width: 45%;
-                float: right;
-                background: #eaebed;
-                padding: 90px 65px 60px 65px;
-                position: relative;
-                p:first-child{
-                    font:bold 20px $merriweather;
-                    color:rgba(0,0,0,.95);
-                    text-transform: uppercase;
-                    text-align: center;
-                    margin-top: 0;
-                    span{
-                        font:normal 15px $merriweather;
-                        color:#787878;
-                        
-                    }
-                }
-                p:nth-child(2){
-                    font:16px $raleway;
-                    color:rgba(0,0,0,.7);
-                    text-align: center;
-                    line-height: 1.5;
-                }
-                .reviewStars{
-                    width:105px;
-                    height: 14px;
-                    background: url('../img/stars.jpg') 50% 50% no-repeat;
-                    margin:0 auto;
-                }
-               
-            }
-            .reviewBtns{
-                position: absolute;
-                bottom:-20%;
-                right: 0;
-                button{
-                    border:none;
-                    cursor: pointer;
-                    margin-left: 40px;
-                    width:53px;
-                    height: 54px;
-                    background: #fff;
-                    box-shadow:2px 2px 4px rgba(0,0,0,.5); 
-                    &:first-child{
-                        background:url('../img/reviewBtnl.png')50% 50% no-repeat;
-                    }
-                    &:first-child:hover{
-                        background: rgb(113,246,235)
-                            url('../img/reviewBtnl.png')50% 50% no-repeat;
-                    }
-                    &:last-child{
-                        
-                        background:url('../img/reviewBtnr.png')50% 50% no-repeat;
-                    }
-                    &:last-child:hover{
-                        background: rgb(113,246,235)
-                            url('../img/reviewBtnr.png')50% 50% no-repeat;
-                    }
-                }
-            }
-        }
-    }
-}
-// end review
-
-
-
-//partners
-.partners{
-    padding: 100px 0 100px 0;
-    .partnersContent{
-        @include container;
-        @include clearfix;
-        .topPartnersIcon{
-            float:right;
-            position: relative;
-            left: -50%;
-            text-align: left;
-            ul{
-                list-style: none;
-                position: relative;
-                left:50%;
-            }
-            li{ 
-                float: left;
-                position: relative;
-                cursor: pointer;
-                width:150px;
-                height:60px;
-                background: url(../img/topIconSet.png)0 0  no-repeat; 
-            }
-            li:nth-child(2){
-                background-position: -162px 0;
-            }
-             li:nth-child(3){
-                background-position: -322px 0;
-            }
-          
-        }
-        
-        
-        .bottomPartnersIcon{
-            float:right;
-            position: relative;
-            left: -50%;
-            text-align: left;
-            ul{
-                list-style: none;
-                position: relative;
-                left:50%;
-            }
-            li{ 
-                float: left;
-                position: relative;
-                cursor: pointer;
-                width:150px;
-                height:60px;
-                background: url(../img/bottomIconSet.png)0 0  no-repeat; 
-            }
-            li:nth-child(2){
-                background-position: -162px 0;
-            }
-            li:nth-child(3){
-                background-position: -317px 0;
-            }
-            li:nth-child(4){
-                background-position: -465px 0;
-            }
-            li:nth-child(5){
-                background-position: -635px 0;
-            }
-            li:nth-child(6){
-                background-position: -832px 0;
-            }
-          
-        }
-    }
-}
-//end partners
-
-
-//callback
-.callback{
-    background:url('../img/bgCallBack.jpg')50% 50% repeat-x;
-    height: 733px;
-    
-    .callbackContent{
-        @include container;
-        @include clearfix;
-        padding-top:115px; 
-        .callbackContentForm{
-            width: 45%;
+    .nav{
+        float:right;
+        li{
             float:left;
-            background:$callBackColor;
-            padding: 20px 20px;
-            input , textarea{
+            margin-left:15px;
+            a{
                 display: block;
-                width: 100%;
-                border:none;
-                border-bottom: 1px solid rgba(109,121,129,.71);
-                background: transparent;
-                margin-bottom: 20px;
-                padding-bottom:10px;
-                &::placeholder{
-                    font: 15px $raleway;
-                    color:rgba(255,255,255,.6);
-                }
-            }
-            textarea{
-                resize: none;
-            }
-            button{
+                font:bold 15px $merriweather;
                 cursor: pointer;
-                display: block;
-                font:18px $monserrat;
-                color:rgba(0,0,0,.7);
                 text-transform: uppercase;
-                text-align: center;
-                padding: 10px 15px;
-                background: #6eeee4;
-                border:none;
+                color:#505050;
+                text-shadow: 1px 1px 1px rgba(0,0,0,.1); 
                 &:hover{
-                    background: darken(#6eeee4, 25%);
+                    color:darken(#505050 ,50%);
+                    text-shadow:2px 1px 3px rgba(0,0,0,.1);
                 }
             }
-            
         }
-        .contacts{
-            width: 45%;
+        
+    }
+}
+.headerBottom{
+    padding-top: 200px;
+    text-align: center;
+    position: relative;
+    h2{
+        font:bold 45px $monserrat;
+        color:#505050;
+        text-shadow:4px 6px 6px #c9c9cb; 
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 0;
+        span{
+            background: #b2f2ee;
+        }
+    }
+    a{
+        font:18px $monserrat;
+        color:rgba(0,0,0,.75);
+        text-transform: uppercase;
+        display:inline-block;
+        margin-top:125px;
+        margin-bottom:190px; 
+        padding:15px 40px;
+        border:2px solid #777879;
+        &:hover{
+            background: #fff;
+        }
+            
+    }
+    img{
+        display: block;
+        position: absolute;
+        left:80%; 
+        top:70%;
+    }
+}
+//end header
+
+//about
+.about{
+    background: #f8fafa;
+    .aboutTitle{
+        p{
+            @include someText;
+        }
+    }
+    .aboutContent{
+        margin-top:120px;
+        padding-bottom:90px;
+        @include clearfix;
+        .aboutSlider{
+            float:left;
+            width:40%; 
+        }
+        .aboutContentRight{
             float:right;
-            background: $callBackColor;
-            padding: 20px 20px;
+            width: 50%;
             p{
-                margin-top:0;
-                font:15px $raleway;
-                color:rgba(0,0,0,.7);
-            }
-            .contactsMap{
-                background: url('../img/googleMap.jpg')50% 50% no-repeat;
-                height: 207px;
+                font:16px $raleway;
+                color:rgba(0,0,0,.74);
+                line-height:1.6; 
             }
         }
     }
-}
-//end callback
-
-//footer
-footer{
-    background: $bgFooter;
-    .footerContent{
-        @include container;
-        @include clearfix;
+    .aboutSlider{
         text-align: center;
-        padding:50px 0;
-        p:first-child{
-            margin-top:0;
-            font:16px $raleway;
-            color: rgba(0,0,0,.8);
-            text-transform: uppercase;
-        }
-        .footerSetIcon{  
-            @include clearfix;
-            float:right;
+        .aboutSliderWrapper{
+            background: url('../img/slidderWrapper.png')center center no-repeat;
+            height: 483px;
             position: relative;
-            left: -50%;
-            
-            ul{
-                list-style: none;
-                position: relative;
-                left:45%;
-                @include clearfix;
-                li{ 
-                    @include clearfix;
-                    float: left;
-                    cursor: pointer;
-                    width:45px;
-                    height:40px;
-                    background: #424648;
-                    margin-right:10px; 
-                    position: relative;
-                    &::after{
-                        content:'';
-                        display: block;
-                        width: 30px;
-                        height: 25px;
-                        position: absolute;
-                        background:url('../img/footerSetIcon.png')no-repeat;
-                        top:17%;
-                        left:12%;
-                    }  
-                }
-                li:nth-child(2){
-                    &:after{
-                        background-position:-30px 0 ; 
-                    }
-                }
-                li:nth-child(3){
-                    &:after{
-                        background-position:-58px 0 ; 
-                    }
-                }        
-                li:nth-child(4){
-                    &:after{
-                        background-position:-83px 0 ; 
-                    }
-                }
-            
-                li:hover{
-                    background: #6eeee4;
-                }
-                li:nth-child(1):hover{
-                    &:after{
-                        background-position: 0 -32px; 
-                    }    
-                }
-                li:nth-child(2):hover{
-                    &:after{
-                        background-position: -30px -32px; 
-                    }
-                }
-                li:nth-child(3):hover{
-                    &:after{
-                        background-position: -58px -32px; 
-                    }
-                }
-                li:nth-child(4):hover{
-                    &:after{
-                        background-position: -83px -32px; 
-                    }
-                }
+            margin-bottom: 20px;
+            img{
+                position: absolute;
+                left:34px;
+                opacity:0;
+                transition: opacity .9s;
             }
+            .show{
+                opacity: 1;
+            }
+        }
+        span{
+            width:20px;
+            height: 20px;
+            background: #fff;
+            border:1px solid #ccc;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 20px;
+            cursor:pointer;
            
         }
-        p:last-child{
-            @include clearfix;
-            font:16px $raleway;
-            color:rgba(0,0,0 ,.4);
-            margin-top:100px;
-            margin-bottom: 0;
+        .active{
+            background: aqua;
         }
+        
     }
 }
+
+//end about

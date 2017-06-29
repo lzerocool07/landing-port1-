@@ -1,262 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Agency</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>ShopNo</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="libs/fontAwesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <!--header-->
-    <header>
-        <div class="headerBlock">
-            <div class="headerContent">
-                <div class="headerTop">
-                    <div class="headerLogo">
-                        <h1>Sh<span>o</span>pno</h1>
-                    </div>
-                    <div class="headerNav">
-                    
-                    </div>    
+    <header class="header">
+        <div class="container">
+            <div class="headerTop">
+                <div class="logo">
+                    <a href=""><h1>Sh<span>o</span>pno</h1></a>
                 </div>
-                <h2>Say hello to <span>shopno!</span><br><span>agency</span> corporate shopno theme</h2>
-                <a href="#" title="contact us">Contact us</a>
+                <nav>
+                    <ul class="nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="headerBottom">
+                <h2>Say Hello to <span>SHOPNO!</span></h2>
+                <h2><span>Agency</span> CORPORATE SHOPNO Theme</h2>
+                <a href="#">Contact us</a>
                 <img src="img/glass.jpg" alt="">
             </div>
         </div>
     </header>
     <!--/header-->
-    
+
     <!--about-->
     <section class="about">
-        <div class="aboutContent">
-            <h3>About us</h3>
-            <h6>Lorem ipsum dolor sit amet event landing template</h6>
-            <div class="aboutBlock">
+        <div class="container">
+            <div class="aboutTitle">
+                <h3>About us</h3>
+                <p>Lorem ipsum dolor sit amet event landing template</p>
+            </div>
+            <div class="aboutContent">
                 <div class="aboutSlider">
                     <div class="aboutSliderWrapper">
-                        <div class="aboutSliderItems">
-                            <img src="img/itemsSlider.jpg" alt="items" class="sliderItems showed">
-                            <img src="img/itemsSlider2.jpg" alt="items" class="sliderItems">
-                            <img src="img/itemsSlider.jpg" alt="items" class="sliderItems">
-                            <img src="img/itemsSlider2.jpg" alt="items" class="sliderItems">
-                        </div>
+                        <img src="img/sliderItem1.jpg" class="show" alt="">
+                         <img src="img/sliderItem2.jpg" alt="">
+                        <img src="img/sliderItem3.jpg" alt="">
+                       
+                       
                     </div>
-                    <div class="sliderBtns">
-                        <span class="active"></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+                    <span class="active" data-number=0></span>
+                    <span data-number="1"></span>
+                    <span data-number="2"></span>
+                  
                 </div>
-                <div class="aboutInf">
-                    <article>
-                        <h5>We Actually Do amazing works</h5>
-                        <p>A visual approach is an approach to a runway at an airport 
-                        conducted under instrument flight rules. The pilot must at all times have either the airport or the preceding aircraft in approach correct sight. conducted under instrument flight rules. The pilot must at all times.
-                        </p>
-                        <p>
-                            Preceding aircraft in approach correct sight. conducted under instrument flight rules.
-                        </p>
-                    </article>
-                    <article>
-                        <h5>why we are the great?</h5>
-                        <p>A visual approach is an approach to a runway at an airport 
-                        conducted under instrument flight rules.
-                        The preceding aircraft in approach correct sight.</p>
-                    </article>
+                <div class="aboutContentRight">
+                    <h4>We Actually Do amazing works</h4>
+                    <p>
+                        A visual approach is an approach to a runway at an airport conducted under instrument flight rules. The pilot must at all times have either the airport or the preceding aircraft in approach correct sight. conducted under instrument flight rules. The pilot must at all times.
+                    </p>
+                    <p>Preceding aircraft in approach correct sight. conducted under instrument flight rules.</p>
+                    <h4>why we are the great?</h4>
+                    <p>A visual approach is an approach to a runway at an airport conducted under instrument flight rules.The preceding aircraft in approach correct sight.</p>
                 </div>
             </div>
         </div>
     </section>
     <!--/about-->
-
-   
-    <!--works-->
-    <section class="works">
-        <div class="worksContent">
-            <h3>featured works</h3>
-            <h6>Lorem ipsum dolor sit amet event landing template</h6>
-            <div class="worksGallery">
-                <a href="#"><img src="img/item1.jpg" alt="" class="item1 gallery"></a>
-                <a href="#"><img src="img/item2.jpg" alt="" class="item2 gallery">
-                <a href="#"><img src="img/item3.jpg" alt="" class="item3 gallery"></a>
-                <a href="#"><img src="img/item4.jpg" alt="" class="item5 gallery"></a>
-                <a href="#"><img src="img/item5.jpg" alt="" class="item6 gallery"></a>
-                <a href="#"><img src="img/item6.jpg" alt="" class="item7 gallery"></a>
-            </div>
-        </div>
-    </section>
-    <!--/works-->
-    
-    <!--services-->
-    <section class="services">
-        <div class="servicesContent">
-            <h3>our services</h3>
-            <h6>Lorem ipsum dolor sit amet event landing template</h6>
-            <div class="servicesBlock">
-                <div class="item1 style">
-                    <p>Designing is The CooL LOVE FOR.</p>
-                    <p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.</p>
-                </div>
-                <div class="item2 style">
-                    <h4>Cool psd Design</h4>
-                    <p>
-                        Our most popular service is our we know that sometimes it’s something and you middle most..
-                    </p>
-                    <a href="#">read more</a>
-                </div>
-                <div class="item3 style">
-                    <h4>Designing is The Cool</h4>
-                    <p>Our most popular service is our Virtual Receptionist.<br> We know that ...</p>
-                    <a href="#">read more</a>
-                </div>
-                <div class="item4 style">
-                    <h4>PSD TO HTML KORI</h4>
-                    <p>e know that sometimes it’s something and you middle most..</p>
-                    <a href="#">read more</a>
-                </div>
-                <div class="item5 style">
-                    <h4>cool psd Design</h4>
-                    <p>Our most popular service is our new virtual Receptionist you middle most..</p>
-                    <a href="#">read more</a>
-                </div>
-                <div class="item6 style">
-                    <h4>Designing is The Cool FOR</h4>
-                    <p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most..</p>
-                    <a href="#">read more</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--/services-->
-    
-    <!--teams-->
-    <section class="team">
-        <div class="teamContent">
-            <h3>small team</h3>
-            <h6>Lorem ipsum dolor sit amet event landing template</h6>
-            <div class="teamBlock">
-               <img src="img/teamItem.jpg" alt="">
-               <img src="img/teamItem.jpg" alt="">
-               <img src="img/teamItem.jpg" alt="">
-               <img src="img/teamItem.jpg" alt="">
-               <img src="img/teamItem.jpg" alt="">
-               <img src="img/teamItem.jpg" alt="">
-            </div>
-        </div>
-    </section>
-    <!--teams-->
-    
-    
-    <!--review-->
-     <section class="review">
-        <div class="reviewContent">
-            <h3>what they says</h3>
-            <h6>Lorem ipsum dolor sit amet event landing template</h6>
-            <div class="reviewBlock">
-                <div class="reviewSlider">
-                    <div class="reviewSliderWrapper">
-                        <div class="reviewSliderItems">
-                            <img src="img/reviewSliderItem1.jpg" alt="items" class="sliderItems showed">
-                            <img src="img/reviewSliderItem2.jpg" alt="items" class="sliderItems showed">
-                            <img src="img/reviewSliderItem1.jpg" alt="items" class="sliderItems showed">
-                            <img src="img/reviewSliderItem2.jpg" alt="items" class="sliderItems showed">
-                            
-                        </div>
-                    </div>
-                    <div class="sliderBtns">
-                        <span class="active"></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-                <div class="reviewInf">
-                    <p>AL RAYHAN<span> / Ui/ux Designer</span></p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and you 
-                    standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
-                    <div class="reviewStars"></div>
-                    <div class="reviewBtns">
-                        <button></button>
-                        <button></button>
-                    </div>      
-                </div>
-               
-            </div>
-        
-        </div>
-    </section>
-    <!--/review-->
-    
-    <!--partners-->
-    <section class="partners">
-        <div class="partnersContent">
-            <div class="topPartnersIcon">
-                <ul>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                </ul>
-            </div>
-            <div class="bottomPartnersIcon">
-                <ul>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <!--/partners-->
-    
-    
-    <!--callback-->
-    <section class="callback">
-        <div class="callbackContent">
-            <div class="callbackContentForm">
-                <form action="#">
-                    <input type="text" name="name" placeholder="Name*">
-                    <input type="text" name="subject" placeholder="Subject*">
-                    <input type="email" name="email" placeholder="E-mail*">
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                    <button type="button">Send message</button>
-                </form>
-            </div>
-            <div class="contacts">
-                <p>Adress Line1</p>
-                <p>Adress Line2</p>
-                <p>Phone +548 945 845</p>
-                <p>Fax +456458 54548</p>
-                <p>Web: www.designagency.net</p>
-                <p>Email: info@designagency.net</p>
-                <div class="contactsMap">
-                    
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--/callback-->
-    
-    
-    <footer>
-        <div class="footerContent">
-            <p>Follow us</p>
-            <div class="footerSetIcon">
-                <ul>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                </ul>
-            </div>
-            <p>Copyright Masum Parvej, All Rights Reserved</p>
-        </div>
-    </footer>
-    <script src="js/aboutSlider.js"></script>
+<script src="js/slider.js"></script>
 </body>
+
 </html>

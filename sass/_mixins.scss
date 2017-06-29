@@ -1,0 +1,29 @@
+@mixin container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding:0 15px 0 15px; 
+}
+
+
+@mixin clearfix {
+    &::before{
+        content:" ";
+        display: block;
+        height: 0;
+        clear: both;
+    }
+    &::after {
+        content:" ";
+        display: block;
+        height: 0;
+        clear: both;
+    }    
+}
+
+@mixin someText{
+    font:18px $merriweather;
+    color:rgba(0,0,0,.62);
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0;
+}
