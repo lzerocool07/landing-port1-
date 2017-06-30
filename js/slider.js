@@ -1,4 +1,8 @@
-window.onload = function(){
+
+    
+
+
+;(function(){
     var btns = document.querySelectorAll('.aboutSlider span'),
         imgs = document.querySelectorAll('.aboutSliderWrapper img');
     var b = 0;
@@ -11,4 +15,4 @@ window.onload = function(){
             imgs[b].className+='show';
         }
     }
-}
+}());

@@ -4,6 +4,20 @@
   padding: 0 15px 0 15px;
 }
 
+.container::before {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.container::after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
 h3 {
   font: bold 38px "Montserrat", sans-serif;
   color: rgba(0, 0, 0, 0.9);
@@ -33,6 +47,11 @@ ul {
 
 a, a:hover {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .header {
@@ -148,6 +167,7 @@ a, a:hover {
   text-transform: uppercase;
   text-align: center;
   margin-top: 0;
+  margin-bottom: 100px;
 }
 
 .about .aboutContent {
@@ -172,42 +192,28 @@ a, a:hover {
 .about .aboutContent .aboutSlider {
   float: left;
   width: 40%;
-}
-
-.about .aboutContent .aboutContentRight {
-  float: right;
-  width: 50%;
-}
-
-.about .aboutContent .aboutContentRight p {
-  font: 16px "Raleway";
-  color: rgba(0, 0, 0, 0.74);
-  line-height: 1.6;
-}
-
-.about .aboutSlider {
   text-align: center;
 }
 
-.about .aboutSlider .aboutSliderWrapper {
+.about .aboutContent .aboutSlider .aboutSliderWrapper {
   background: url("../img/slidderWrapper.png") center center no-repeat;
   height: 483px;
   position: relative;
   margin-bottom: 20px;
 }
 
-.about .aboutSlider .aboutSliderWrapper img {
+.about .aboutContent .aboutSlider .aboutSliderWrapper img {
   position: absolute;
   left: 34px;
   opacity: 0;
   transition: opacity .9s;
 }
 
-.about .aboutSlider .aboutSliderWrapper .show {
+.about .aboutContent .aboutSlider .aboutSliderWrapper .show {
   opacity: 1;
 }
 
-.about .aboutSlider span {
+.about .aboutContent .aboutSlider span {
   width: 20px;
   height: 20px;
   background: #fff;
@@ -218,6 +224,502 @@ a, a:hover {
   cursor: pointer;
 }
 
-.about .aboutSlider .active {
+.about .aboutContent .aboutSlider .active {
   background: aqua;
+}
+
+.about .aboutContent .aboutContentRight {
+  float: right;
+  width: 50%;
+}
+
+.about .aboutContent .aboutContentRight p {
+  font: 16px "Raleway", sans-serif;
+  color: rgba(0, 0, 0, 0.74);
+  line-height: 1.6;
+}
+
+.portfolio p {
+  font: 18px "Merriweather", sans-serif;
+  color: rgba(0, 0, 0, 0.62);
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 100px;
+}
+
+.portfolio .portfolioItems {
+  margin-bottom: 100px;
+}
+
+.portfolio .portfolioItems img {
+  width: 31%;
+  margin: 1%;
+}
+
+.services {
+  background: #f9fbfb;
+  padding-bottom: 100px;
+}
+
+.services::before {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.services::after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.services p {
+  font: 18px "Merriweather", sans-serif;
+  color: rgba(0, 0, 0, 0.62);
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 100px;
+}
+
+.services .servicesItems .style {
+  margin-bottom: 100px;
+  padding: 70px 0 0 40px;
+  box-sizing: border-box;
+  margin: 1%;
+  float: left;
+  height: 370px;
+}
+
+.services .servicesItems .style p {
+  font: 16px "Raleway", sans-serif;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: left;
+  text-transform: none;
+  margin-bottom: 50px;
+}
+
+.services .servicesItems .style a {
+  font: 19px "Raleway", sans-serif;
+  font-weight: medium;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.77);
+}
+
+.services .servicesItems .style a i {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.services .servicesItems .style a:hover {
+  color: gray;
+}
+
+.services .servicesItem1 {
+  width: 58%;
+  background: url(../img/servicesItem1.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.services .servicesItem2 {
+  width: 38%;
+  background: url("../img/servicesItem2.jpg") center center no-repeat;
+}
+
+.services .servicesItem3 {
+  width: 58%;
+  background: url(../img/servicesItem1.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.services .servicesItem4 {
+  width: 38%;
+  background: url("../img/servicesItem3.jpg") center center no-repeat;
+}
+
+.services .servicesItem5 {
+  width: 38%;
+  background: url(../img/servicesItem4.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.services .servicesItem6 {
+  width: 58%;
+  background: url("../img/servicesItem6.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.team {
+  background: #fff;
+}
+
+.team::before {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.team::after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.team p {
+  font: 18px "Merriweather", sans-serif;
+  color: rgba(0, 0, 0, 0.62);
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 100px;
+}
+
+.team .teamBlock::before {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.team .teamBlock::after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.team .teamBlock .personStyle {
+  float: left;
+  margin: 1%;
+  width: 31%;
+  height: 440px;
+  cursor: pointer;
+}
+
+.team .teamBlock .message {
+  width: 70%;
+  opacity: 0;
+  transition: opacity .5s;
+  margin: 60% auto;
+  margin-bottom: 0;
+  padding: 20px 20px;
+  background: rgba(110, 245, 234, 0.8);
+  position: relative;
+  box-sizing: border-box;
+}
+
+.team .teamBlock .message::before {
+  content: '';
+  position: absolute;
+  left: 10%;
+  bottom: 100%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 12.5px 23px 16.5px;
+  border-color: transparent transparent rgba(110, 245, 234, 0.8) transparent;
+}
+
+.team .teamBlock .message h6 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font: bold 16px "Raleway", sans-serif;
+  color: rgba(0, 0, 0, 0.95);
+  text-transform: uppercase;
+}
+
+.team .teamBlock .message h6 span {
+  font: 15px "Merriweather", sans-serif;
+  color: rgba(118, 112, 122, 0.95);
+}
+
+.team .teamBlock .message p {
+  font: 16px "Raleway", sans-serif;
+  text-transform: none;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.team .teamBlock .message .messageIcons i {
+  color: #429891;
+  cursor: pointer;
+}
+
+.team .teamBlock .message .messageIcons i:hover {
+  color: black;
+}
+
+.team .teamBlock .teamPerson1 {
+  background: url(../img/person1.jpg) center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.team .teamBlock .teamPerson2 {
+  background: url(../img/person2.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.team .teamBlock .teamPerson3 {
+  background: url(../img/person3.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.team .teamBlock .teamPerson4 {
+  background: url(../img/person4.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.team .teamBlock .teamPerson5 {
+  background: url(../img/person5.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.team .teamBlock .teamPerson6 {
+  background: url(../img/person6.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.partners {
+  margin-top: 100px;
+  padding: 50px 0 50px 0;
+}
+
+.partners .topPartners ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+.partners .topPartners ul li {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 20px;
+  background: url("../img/setIconsTop.png") 0 0 no-repeat;
+  height: 65px;
+  width: 130px;
+}
+
+.partners .topPartners ul li:nth-child(2) {
+  background-position: -149px 0;
+}
+
+.partners .topPartners ul li:nth-child(3) {
+  background-position: -313px 0;
+}
+
+.partners .topPartners ul li:nth-child(1):hover {
+  background-position: 0 -70px;
+}
+
+.partners .topPartners ul li:nth-child(2):hover {
+  background-position: -149px -70px;
+}
+
+.partners .topPartners ul li:nth-child(3):hover {
+  background-position: -313px -70px;
+}
+
+.partners .bottomPartners ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+.partners .bottomPartners ul li {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 20px;
+  background: url("../img/setIconsBottom.png") 0 0 no-repeat;
+  height: 65px;
+  width: 130px;
+}
+
+.partners .bottomPartners ul li:nth-child(2) {
+  background-position: -149px 0;
+}
+
+.partners .bottomPartners ul li:nth-child(3) {
+  background-position: -290px 0;
+}
+
+.partners .bottomPartners ul li:nth-child(4) {
+  background-position: -451px 0;
+}
+
+.partners .bottomPartners ul li:nth-child(5) {
+  background-position: -591px 0;
+}
+
+.partners .bottomPartners ul li:nth-child(6) {
+  background-position: -735px 0;
+}
+
+.partners .bottomPartners ul li:nth-child(1):hover {
+  background-position: 0 -67px;
+}
+
+.partners .bottomPartners ul li:nth-child(2):hover {
+  background-position: -149px -67px;
+}
+
+.partners .bottomPartners ul li:nth-child(3):hover {
+  background-position: -290px -67px;
+}
+
+.partners .bottomPartners ul li:nth-child(4):hover {
+  background-position: -451px -67px;
+}
+
+.partners .bottomPartners ul li:nth-child(5):hover {
+  background-position: -591px -67px;
+}
+
+.partners .bottomPartners ul li:nth-child(6):hover {
+  background-position: -735px -67px;
+}
+
+.callback {
+  background: url("../img/callbackBg.jpg") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 115px 0;
+}
+
+.callback .callbackBlock::before {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.callback .callbackBlock::after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.callback .callbackBlock .styleCallback {
+  box-sizing: border-box;
+  background: rgba(74, 88, 98, 0.7);
+  margin: 1%;
+  padding: 25px 25px;
+}
+
+.callback .callbackBlock .callbackForm {
+  width: 53%;
+  float: left;
+}
+
+.callback .callbackBlock .callbackForm input {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding-top: 20px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #575f65;
+  font: 16px "Raleway", sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.callback .callbackBlock .callbackForm ::placeholder {
+  font: 16px "Raleway", sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.callback .callbackBlock .callbackForm textarea {
+  width: 100%;
+  resize: none;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #575f65;
+  font: 16px "Raleway", sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 30px;
+}
+
+.callback .callbackBlock .callbackForm button {
+  display: block;
+  font: 18px "Montserrat", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  padding: 15px 30px;
+  background: rgba(110, 238, 228, 0.7);
+  border: none;
+  cursor: pointer;
+}
+
+.callback .callbackBlock .callbackForm button:hover {
+  background: #17c5b8;
+}
+
+.callback .callbackBlock .map {
+  width: 42%;
+  float: right;
+}
+
+.callback .callbackBlock .map p {
+  font: 15px "Raleway", sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.callback .callbackBlock .map p:nth-child(7) {
+  margin-bottom: 43px;
+}
+
+.callback .callbackBlock .map .mapBg {
+  background: url("../img/map.jpg") center center no-repeat;
+  width: 100%;
+  height: 224px;
+}
+
+.footer {
+  padding: 30px 0;
+  background: rgba(38, 43, 46, 0.8);
+}
+
+.footer .footerContent {
+  text-align: center;
+}
+
+.footer .footerContent h6 {
+  font: 20px "Raleway", sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.footer .footerContent i {
+  display: inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 20px;
+  width: 60px;
+  height: 50px;
+  padding-top: 15px;
+  background: #424648;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.footer .footerContent i:hover {
+  background: #6eeee4;
+  color: #081e1c;
+}
+
+.footer .footerContent p {
+  font: 16px "Raleway", sans-serif;
+  color: rgba(255, 255, 255, 0.4);
 }
